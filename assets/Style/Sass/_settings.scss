@@ -22,6 +22,14 @@ $orange: rgb(233, 155, 67);
   align-items: center;
 }
 
+@mixin borderNeon {
+  border: 0.1rem solid #fff;
+  border-radius: 2rem;
+  color: #fff;
+  box-shadow: 0 0 0.3rem #fff, inset 0 0 0.3rem #fff,
+    0 0 1rem rgb(194, 194, 194), inset 0 0 1rem rgb(207, 207, 207),
+    0 0 2rem rgb(163, 163, 163), inset 0 0 2rem #dfdbdb;
+}
 //====================Key frames========================
 
 @keyframes appear {
@@ -46,4 +54,9 @@ li {
 body {
   background: $bodyColor;
   font-family: "Signika Negative", sans-serif;
+}
+.orange {
+  color: $orange;
+  font-size: 2.5rem;
+  font-weight: 700;
 }

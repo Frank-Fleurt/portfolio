@@ -1,4 +1,29 @@
 #section2 {
   height: 100vh;
-  padding-left: 150px;
+
+  color: $textColor;
+  h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 30px;
+  }
+  .text {
+    line-height: 200%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 60px;
+  }
+  .softskills {
+    h2 {
+      text-align: center;
+    }
+  }
+  .languageContainer {
+    @include borderNeon;
+    height: 350px;
+    border-radius: 5px;
+    width: 40%;
+    margin: 0 auto;
+  }
 }
