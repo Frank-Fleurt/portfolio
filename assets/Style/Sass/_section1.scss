@@ -16,7 +16,7 @@
     }
     h2 {
       opacity: 0;
-      animation: 3s 1s appear forwards;
+      animation: 3s 0.5s appear forwards;
       font-size: 2rem;
       .orange {
         color: $orange;
@@ -25,13 +25,13 @@
       }
     }
     .me {
-      animation: 3s 2s appear forwards;
+      animation: 3s 1s appear forwards;
     }
     .know {
-      animation: 3s 3s appear forwards;
+      animation: 3s 1.5s appear forwards;
     }
     .story {
-      animation: 3s 4s appear forwards;
+      animation: 3s 2s appear forwards;
     }
   }
 }

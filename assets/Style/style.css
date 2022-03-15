@@ -169,8 +169,8 @@ nav:hover a span {
 
 #section1 div h2 {
   opacity: 0;
-  -webkit-animation: 3s 1s appear forwards;
-          animation: 3s 1s appear forwards;
+  -webkit-animation: 3s 0.5s appear forwards;
+          animation: 3s 0.5s appear forwards;
   font-size: 2rem;
 }
 
@@ -181,29 +181,54 @@ nav:hover a span {
 }
 
 #section1 div .me {
+  -webkit-animation: 3s 1s appear forwards;
+          animation: 3s 1s appear forwards;
+}
+
+#section1 div .know {
+  -webkit-animation: 3s 1.5s appear forwards;
+          animation: 3s 1.5s appear forwards;
+}
+
+#section1 div .story {
   -webkit-animation: 3s 2s appear forwards;
           animation: 3s 2s appear forwards;
 }
 
-#section1 div .know {
-  -webkit-animation: 3s 3s appear forwards;
-          animation: 3s 3s appear forwards;
-}
-
-#section1 div .story {
-  -webkit-animation: 3s 4s appear forwards;
-          animation: 3s 4s appear forwards;
-}
-
 #section2 {
   height: 100vh;
+  padding-left: 150px;
 }
 
 #section3 {
   height: 100vh;
+  padding-left: 150px;
 }
 
 #contact {
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contact form textarea {
+  resize: none;
 }
 /*# sourceMappingURL=style.css.map */
