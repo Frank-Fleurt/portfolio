@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap");
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background: #dfdbdb;
+  font-family: "Signika Negative", sans-serif;
+}
+
+nav {
+  z-index: 1000;
+  background: #695cfe;
+  border-radius: 0px 109px 109px 0px / 0px 150px 150px 0px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul {
+  margin-top: 175px;
+  height: 350px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav ul a {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-decoration: none;
+  color: black;
+  font-size: 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 20%;
+}
+
+nav ul a:hover {
+  background: #231f53;
+  font-size: 1.1rem;
+}
+
+nav ul a.active {
+  color: white;
+  background: #423a97;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+nav ul a.active i {
+  padding: 0.75em 0.8125em 0.75em 1.1875em;
+  color: white;
+}
+
+nav ul a.active::after {
+  content: "";
+  position: absolute;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  -webkit-clip-path: inset(-5px -5px -5px 0);
+          clip-path: inset(-5px -5px -5px 0);
+  z-index: 2;
+  background: #423a97;
+  right: -0.45em;
+  width: 0.5em;
+  height: 100%;
+  border-radius: 0 0.375em 0.375em 0;
+}
+
+nav ul a i {
+  padding: 0.75em 1em;
+  color: white;
+}
+
+nav ul a span {
+  -webkit-transition: opacity 0.25s 0.5s, padding 0.5s 0.5s, font-size 0.5s 0.5s;
+  transition: opacity 0.25s 0.5s, padding 0.5s 0.5s, font-size 0.5s 0.5s;
+  padding: 0;
+  font-size: 0;
+  opacity: 0;
+  color: white;
+}
+
+nav:hover a.active span {
+  padding: 0.75em 0.8125em 0.75em 0.1875em;
+}
+
+nav:hover a span {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 1;
+  font-size: 1em;
+  padding: 0.75em 1em 0.75em 0;
+}
+
+#section1 {
+  height: 100vh;
+  color: #a5a5a5;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#section1 div {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-align: center;
+  line-height: 700%;
+}
+
+#section1 div h1 {
+  -webkit-animation: 3s appear forwards;
+          animation: 3s appear forwards;
+  font-size: 2rem;
+}
+
+#section1 div h2 {
+  opacity: 0;
+  -webkit-animation: 3s 1s appear forwards;
+          animation: 3s 1s appear forwards;
+  font-size: 2rem;
+}
+
+#section1 div h2 .orange {
+  color: #e99b43;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+#section1 div .me {
+  -webkit-animation: 3s 2s appear forwards;
+          animation: 3s 2s appear forwards;
+}
+
+#section1 div .know {
+  -webkit-animation: 3s 3s appear forwards;
+          animation: 3s 3s appear forwards;
+}
+
+#section1 div .story {
+  -webkit-animation: 3s 4s appear forwards;
+          animation: 3s 4s appear forwards;
+}
+
+#section2 {
+  height: 100vh;
+}
+
+#section3 {
+  height: 100vh;
+}
+
+#contact {
+  height: 100vh;
+}
+/*# sourceMappingURL=style.css.map */

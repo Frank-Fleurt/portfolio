@@ -1,0 +1,49 @@
+// ================Variables============
+
+$bodyColor: #dfdbdb;
+$SidebarColor: #fff;
+$primaryColor: #695cfe;
+$active: #423a97;
+$navHover: #231f53;
+$primaryColorLight: #f6f5ff;
+$toggleColor: #ddd;
+$textColor: #a5a5a5;
+$orange: rgb(233, 155, 67);
+
+//=================Fonts===============
+
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap");
+
+//====================Mixins========================
+
+@mixin centerElement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//====================Key frames========================
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+//====================Générales settigns========================
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+li {
+  list-style: none;
+}
+body {
+  background: $bodyColor;
+  font-family: "Signika Negative", sans-serif;
+}

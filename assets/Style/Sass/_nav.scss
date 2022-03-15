@@ -1,0 +1,74 @@
+nav {
+  z-index: 1000;
+  background: $primaryColor;
+  border-radius: 0px 109px 109px 0px / 0px 150px 150px 0px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  ul {
+    margin-top: 175px;
+    height: 350px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    a {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      text-decoration: none;
+      color: black;
+      font-size: 1em;
+      align-items: center;
+      height: 20%;
+      &:hover {
+        background: $navHover;
+        font-size: 1.1rem;
+      }
+      &.active {
+        i {
+          padding: 0.75em 0.8125em 0.75em 1.1875em;
+          color: white;
+        }
+        color: white;
+        background: $active;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+        &::after {
+          content: "";
+          position: absolute;
+          box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+          clip-path: inset(-5px -5px -5px 0);
+          z-index: 2;
+          background: $active;
+          right: -0.45em;
+          width: 0.5em;
+          height: 100%;
+          border-radius: 0 0.375em 0.375em 0;
+        }
+      }
+      i {
+        padding: 0.75em 1em;
+        color: white;
+      }
+      span {
+        transition: opacity 0.25s 0.5s, padding 0.5s 0.5s, font-size 0.5s 0.5s;
+        padding: 0;
+        font-size: 0;
+        opacity: 0;
+        color: white;
+      }
+    }
+  }
+  &:hover a {
+    &.active span {
+      padding: 0.75em 0.8125em 0.75em 0.1875em;
+    }
+    span {
+      transition: 0.5s;
+      opacity: 1;
+      font-size: 1em;
+      padding: 0.75em 1em 0.75em 0;
+    }
+  }
+}
