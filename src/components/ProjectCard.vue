@@ -15,7 +15,7 @@ const props = defineProps<{
 			<h3>{{title}}</h3>
 			<p>{{text}}</p>
 		</div>
-		<img class="backgorundImage" :src="'./src/assets/' + image" alt="" @loadstart="loadImage">
+		<img class="backgorundImage" :src="'./src/assets/' + image">
 	</div>
 </template>
 
