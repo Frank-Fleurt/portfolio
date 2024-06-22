@@ -7,7 +7,7 @@
 		<h2>Par mes réseaux</h2>
 		<div class="networkContainer" >
 			<a class="button" id="facebookNetwork" href="https://www.facebook.com/frank.fleurt/" target="_blank">Facebook</a>
-			<a class="button" id="instagramNetwork" href="https://www.facebook.com/frank.fleurt/" target="_blank">Instagram</a>
+			<a class="button" id="instagramNetwork" href="https://www.instagram.com/franki33340/" target="_blank">Instagram</a>
 		</div>
 	</div>
 </template>
